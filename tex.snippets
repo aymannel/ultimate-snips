@@ -1,0 +1,707 @@
+#new command
+snippet nc
+\newcommand{\\${1:cmd}}[${2:opt}]{${3:realcmd}} ${0}
+endsnippet
+
+#use package
+snippet up
+\usepackage{${1:package}} ${0}
+endsnippet
+
+snippet bib
+\bibliographystyle{unsrt}
+\bibliography{${1:bibliography}}${0}
+endsnippet
+
+# modiaram #
+snippet mod
+\begin{center}
+\begin{modiagram}
+	${1}
+\end{modiagram}
+\end{center}
+endsnippet
+
+snippet atom
+\atom[${1:name}]{${2:position}}{
+	${3:AO}}
+endsnippet
+
+snippet ao
+${1:AO} = {${2:energy}; ${3:el-spec}}
+endsnippet
+
+###### Document ######
+#begin environment
+snippet beg
+\begin{${1:env}}
+	${0:${VISUAL}}
+\end{$1}
+endsnippet
+
+#quote environment
+snippet quote
+\begin{center}
+	\textit{\`\`${0}''}
+\end{center}
+endsnippet
+
+#begin center environment
+snippet center
+\begin{center}
+	${0:${VISUAL}}
+\end{center}
+endsnippet
+
+#begin equation environment
+snippet eq
+\begin{equation*}
+	${0:${VISUAL}}
+\end{equation*}
+endsnippet
+
+#begin align environment
+snippet align
+\begin{align*}
+	${0:${VISUAL}}
+\end{align*}
+endsnippet
+
+#begin gather environment
+snippet gather
+\begin{gather*}
+	${0:${VISUAL}}
+\end{gather*}
+endsnippet
+
+snippet pp
+\pp{${1}}{${2}}${0}
+endsnippet
+
+# Enumerate
+snippet enum
+\begin{enumerate}
+	\item ${0}
+\end{enumerate}
+endsnippet
+
+snippet tab2
+\begin{table}[ht]\centering
+\begin{tabular}{ c|c } 
+	${1} & ${2} \\\\\hline
+	${3} & ${4} \\\\
+	${5} & ${6}
+\end{tabular}\caption{${7}}
+\end{table}
+endsnippet
+
+snippet tab3
+\begin{table}[ht]\centering
+\begin{tabular}{ c|c|c } 
+	${1} & ${2} & ${3} \\\\\hline
+	${4} & ${5} & ${6} \\\\
+	${7} & ${8} & ${9}
+\end{tabular}\caption{${10}}
+\end{table}
+endsnippet
+
+snippet enuma
+\begin{enumerate}[(a)]
+	\item ${0}
+\end{enumerate}
+endsnippet
+
+snippet enumi
+\begin{enumerate}[(i)]
+	\item ${0}
+\end{enumerate}
+endsnippet
+
+# Itemize
+snippet item
+\begin{itemize}
+	\item ${0}
+\end{itemize}
+endsnippet
+
+# Item
+snippet it
+\item ${1:${VISUAL}}
+endsnippet
+
+# Section
+snippet sec
+\section{${1:section name}}${0}
+endsnippet
+
+# Section without number
+snippet sec*
+\section*{${1:section name}}${0}
+endsnippet
+
+# Sub section
+snippet sub 
+\subsection{${1:subsection name}}${0}
+endsnippet
+
+# Sub section without number
+snippet sub*
+\subsection*{${1:subsection name}}${0}
+endsnippet
+
+# Sub sub section
+snippet ssub
+\subsubsection{${1:subsubsection name}}${0}
+endsnippet
+
+# Sub sub section without number
+snippet ssub*
+\subsubsection*{${1:subsubsection name}}${0}
+endsnippet
+
+# Big skip (newline) 
+snippet new
+\bigskip${0}
+endsnippet
+
+# Vertical Space
+snippet space
+\vspace{${1}}${0}
+endsnippet
+
+# Paragraph
+snippet par
+\paragraph{${1:paragraph name}}
+${0}
+endsnippet
+
+# Sub paragraph
+snippet subp
+\subparagraph{${1:subparagraph name}}
+${0}
+endsnippet
+
+# Text formatting
+snippet ita
+\textit{${1:${VISUAL:text}}}${0}
+endsnippet
+
+snippet bf
+\textbf{${1:${VISUAL:text}}}${0}
+endsnippet
+
+snippet under
+\underline{${1:${VISUAL:text}}}${0}
+endsnippet
+
+snippet over
+\overline{${1:${VISUAL:text}}}${0}
+endsnippet
+
+# Figure
+snippet fig
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=${1}\columnwidth]{${2}}
+\end{figure}
+${0}
+endsnippet
+
+snippet ink
+\begin{figure}[ht]
+	\centering
+	\incfig{${1:svgname}}{${2:width}}{${3:fontsize}}
+\end{figure}
+${0}
+endsnippet
+
+###### GREEK SYMBOLS ######
+snippet alp
+\alpha ${0}
+endsnippet
+
+snippet beta
+\beta ${0}
+endsnippet
+
+snippet gam
+\gamma ${0}
+endsnippet
+
+snippet del
+\delta ${0}
+endsnippet
+
+snippet Del
+\Delta ${0}
+endsnippet
+
+snippet eps
+\epsilon
+endsnippet
+
+snippet gam
+\gamma
+endsnippet
+
+snippet Gam
+\Gamma
+endsnippet
+
+snippet sig
+\sigma ${0}
+endsnippet
+
+snippet Sig
+\Sigma ${0}
+endsnippet
+
+snippet pi
+\pi ${0}
+endsnippet
+
+snippet nu
+\nu ${0}
+endsnippet
+
+snippet wn
+\tilde{\text{\textnu}}
+endsnippet
+
+snippet mu
+\mu
+endsnippet
+
+snippet lam
+\lambda
+endsnippet
+
+snippet om
+\omega
+endsnippet
+
+##### QUANTUM #####
+snippet hat
+\hat{${1}}${0}
+endsnippet
+
+snippet hb
+\hbar
+endsnippet
+###### MATHS ######
+snippet bra
+\bra{${1}}${0}
+endsnippet
+
+snippet ket
+\ket{${1}}${0}
+endsnippet
+
+# Trigonometry
+snippet sin
+\sin{${1}}${0}
+endsnippet
+
+snippet sin2
+\sin^2{${1}}${0}
+endsnippet
+
+snippet sin3
+\sin^3{${1}}${0}
+endsnippet
+
+snippet sin4
+\sin^4{${1}}${0}
+endsnippet
+
+snippet asin
+\asin{${1}}${0}
+endsnippet
+
+snippet cos
+\cos{${1}}${0}
+endsnippet
+
+snippet cos2
+\cos^2{${1}}${0}
+endsnippet
+
+snippet cos3
+\cos^3{${1}}${0}
+endsnippet
+
+snippet cos4
+\cos^4{${1}}${0}
+endsnippet
+
+snippet acos
+\acos{${1}}${0}
+endsnippet
+
+snippet tan
+\tan{${1}}${0}
+endsnippet
+
+snippet atan
+\atan{${1}}${0}
+endsnippet
+
+snippet sc
+\sec{${1}}${0}
+endsnippet
+
+snippet csc
+\csc{${1}}${0}
+endsnippet
+
+snippet e
+e^{${1}}${0}
+endsnippet
+
+snippet x
+\times
+endsnippet
+
+snippet dot
+\cdot
+endsnippet
+
+snippet ith
+\ith
+endsnippet
+
+snippet jth
+\jth
+endsnippet
+
+snippet text
+\text{${1}}${0}
+endsnippet
+
+snippet	left
+\left( ${0}
+endsnippet
+
+snippet right
+\right)${0}
+endsnippet
+
+snippet partial
+\partial${0}
+endsnippet
+
+snippet neq
+\neq${0}
+endsnippet
+
+snippet leq
+\leqslant${0}
+endsnippet
+
+snippet geq
+\geqslant${0}
+endsnippet
+
+snippet dbar
+\dbar${0}
+endsnippet
+
+snippet arrow
+\Rightarrow${0}
+endsnippet
+
+snippet larrow
+\Leftarrow${0}
+endsnippet
+
+snippet pm
+\pm
+endsnippet
+
+snippet ln
+\ln{${1}}${0}
+endsnippet
+
+snippet frac
+\frac{${1:num}}{${2:denom}}${0}
+endsnippet
+
+snippet brac
+\brac{${1:num}}{${2:denom}}${0}
+endsnippet
+
+snippet tfrac
+\tfrac{${1:num}}{${2:denom}}${0}
+endsnippet
+
+snippet ddx
+\tfrac{d}{dx}${0}
+endsnippet
+
+snippet ddt
+\tfrac{d${1}}{dt}${0}
+endsnippet
+
+snippet sum
+\sum^{${1:n}}_{${2:i=1}}${0}
+endsnippet
+
+snippet int
+\int^{${1:}}_{${2:}}${0}
+endsnippet
+
+snippet lim
+\lim{${1:n}}{${2:\\infty}}${0}
+endsnippet
+
+###### LINEAR ALGEBRA ######
+snippet det
+\det{${1}}${0}
+endsnippet
+
+snippet mat
+\mat{${1}}${0}
+endsnippet
+
+snippet inv
+\inv{${1}}${0}
+endsnippet
+
+snippet vv
+\vec{${1}}${0}
+endsnippet
+
+snippet ihat
+\hat{\imath}${0}
+endsnippet
+
+snippet jhat
+\hat{\jmath}${0}
+endsnippet
+
+snippet khat
+\hat{k}${0}
+endsnippet
+
+snippet vec2
+\begin{pmatrix}
+	${1} \\\
+	${2}
+\end{pmatrix}
+endsnippet
+
+snippet vec3
+\begin{pmatrix}
+	${1} \\\
+	${2} \\\
+	${3}
+\end{pmatrix}
+endsnippet
+
+snippet rvec2
+\begin{pmatrix}
+	${1} &
+	${2}
+\end{pmatrix}
+endsnippet
+
+snippet rvec3
+\begin{pmatrix}
+	${1} &
+	${2} &
+	${3}
+\end{pmatrix}
+endsnippet
+
+snippet rvec4
+\begin{pmatrix}
+	${1} &
+	${2} &
+	${3} &
+	${4}
+\end{pmatrix}
+endsnippet
+
+snippet i2
+\begin{pmatrix}
+	1 & 0 \\\
+	0 & 1
+\end{pmatrix}${0}
+endsnippet
+
+snippet i3
+\begin{pmatrix}
+	1 & 0 & 0 \\\
+	0 & 1 & 0 \\\
+	0 & 0 & 1
+\end{pmatrix}${0}
+endsnippet
+
+snippet det2
+\begin{vmatrix}
+	${1} & ${2} \\\
+	${3} & ${4}
+\end{vmatrix}${0}
+endsnippet
+
+snippet det3
+\begin{vmatrix}
+	${1} & ${2} & ${3} \\\
+	${4} & ${5} & ${6} \\\
+	${7} & ${8} & ${9}
+\end{vmatrix}${0}
+endsnippet
+
+snippet mat2
+\begin{pmatrix}
+	${1} & ${2} \\\
+	${3} & ${4}
+\end{pmatrix}${0}
+endsnippet
+
+snippet mat3
+\begin{pmatrix}
+	${1} & ${2} & ${3} \\\
+	${4} & ${5} & ${6} \\\
+	${7} & ${8} & ${9}
+\end{pmatrix}${0}
+endsnippet
+
+snippet mat2a
+\begin{pmatrix}
+	a_{11} & a_{12} \\\
+	a_{21} & a_{22}
+\end{pmatrix}${0}
+endsnippet
+
+snippet mat3a
+\begin{pmatrix}
+	a_{11} & a_{12} & a_{13} \\\
+	a_{21} & a_{22} & a_{23} \\\
+	a_{31} & a_{32} & a_{33}
+\end{pmatrix}${0}
+endsnippet
+
+snippet mat3c
+\begin{pmatrix}
+	c_{11} & c_{12} & c_{13} \\\
+	c_{21} & c_{22} & c_{23} \\\
+	c_{31} & c_{32} & c_{33}
+\end{pmatrix}${0}
+endsnippet
+
+snippet mk "Math" wA
+$${1}$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ', '(', ')']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+###### ENVIRONMENTS ######
+snippet example
+\begin{example}{${1:title}}
+	${2}
+\end{example} ${0}
+endsnippet
+
+snippet nb
+\begin{notebene}
+	${1}
+\end{notebene} ${0}
+endsnippet
+
+snippet multicol2
+\begin{multicols}{2}
+	${1}
+	\columnbreak
+	${0}
+\end{multicols}
+endsnippet
+
+snippet ce
+$\ce{${1}}$ ${0}
+endsnippet
+
+snippet chem
+\begin{gather*}\ce{
+	${1}
+}\end{gather*} ${0}
+endsnippet
+
+snippet pka
+pK$_\text{a}$
+endsnippet
+
+###### TIKZ ######
+snippet line-gray
+\draw[gray] (${1:0,0}) -- (${2});
+endsnippet
+
+snippet line-gray-thick
+\draw[gray, thick] (${1:0,0}) -- (${2});
+endsnippet
+
+snippet tikz
+\begin{figure}[ht]\centering
+\begin{tikzpicture}
+	${1}
+\end{tikzpicture}
+\end{figure}
+endsnippet
+
+snippet lab
+\tikzlabel{${1:x}}{${2:y}}{${3:label}}
+endsnippet
+
+snippet ax
+\begin{figure}[ht]\centering
+\begin{tikzpicture}
+	\draw[<->] (-3,0) -- (3,0);
+	\draw[<->] (0,-3) -- (0,3);
+
+	\tikzlabel{3cm}{0}{x}
+	\tikzlabel{0}{3cm}{y}
+\end{tikzpicture}
+\end{figure}
+endsnippet
+
+snippet line
+\draw[thick] (${1:0},${2:0}) -- (${3:1},${4:1});
+endsnippet
+
+###### SKELETONS ######
+snippet skel "Document"
+\documentclass{article}
+\usepackage{ugchem} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[bottom=0.5in,top=0.8in,left=2.5in,right=2.5in]{geometry}
+
+\graphicspath{{./figures/}}
+
+\title{${1:${VISUAL:title}}}
+\author{${2:${VISUAL:term}}}
+
+\begin{document}
+\date{}
+\maketitle
+
+\section{${3:${VISUAL:Section}}}
+\subsection{${4:${VISUAL:Subsection}}}
+${0}
+
+\end{document}
+endsnippet
+
+snippet tikzskel "TikZ"
+\documentclass[tikz,border=1mm]{standalone}
+
+\begin{document}
+\begin{tikzpicture}
+	${1}
+\end{tikzpicture}
+\end{document}
+endsnippet
